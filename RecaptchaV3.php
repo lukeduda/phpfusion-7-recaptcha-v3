@@ -56,7 +56,7 @@ class RecaptchaV3
     }
 
     /**
-     * @param $token
+     * @param string $token
      * @param null $userIp
      * @return RecaptchaV3Response
      */
