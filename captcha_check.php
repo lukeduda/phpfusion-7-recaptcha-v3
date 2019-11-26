@@ -15,7 +15,7 @@ $response = $recaptchaV3->validateToken(
 );
 
 //If it's good and "success" and $error is null
-if ($response->isSuccess() == true) {
+if ($response->isSuccess() == true and $response->getScore() >= 0.5) {
     $_CAPTCHA_IS_VALID = true; //Tell PHP-Fusion it was good...
 } else {
     if (count($response->getErrorCodes())) {

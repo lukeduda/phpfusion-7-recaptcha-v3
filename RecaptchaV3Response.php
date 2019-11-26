@@ -61,6 +61,14 @@ class RecaptchaV3Response
     }
 
     /**
+     * @return float
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
      * @return array
      */
     public function getErrorCodes()
